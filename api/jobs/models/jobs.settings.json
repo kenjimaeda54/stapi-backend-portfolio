@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "name": "Jobs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "position": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": true,
+      "component": "description.job-description"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}
